@@ -14,6 +14,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation platform('io.projectreactor:reactor-bom:2020.0.7')
     implementation 'io.projectreactor:reactor-core'
+    testCompile 'io.projectreactor:reactor-test'
 }
 
 test {

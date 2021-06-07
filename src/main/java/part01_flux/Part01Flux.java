@@ -38,6 +38,8 @@ public class Part01Flux {
     }
 
     public static void main(String[] args) {
-
+        Flux.interval(Duration.ofMillis(100L))
+                .take(10)
+                .subscribe(System.out::println);
     }
 }
